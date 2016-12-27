@@ -1,0 +1,48 @@
+/*通用配置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.header-input{
+	/*height: 64px;*/
+	width: 100%;
+}
+
+
+.container-div{
+	height: 600px;
+}
+
+
+.image-selected{
+	display: block;
+	margin: auto;
+	height: 100%;
+}
+
+.ruler{
+	position: absolute;
+	margin: 100px 0;
+	z-index: 10;
+}
+.ruler-element:nth-child(2n){
+	display: block;
+	height: 10px;
+	width: 10px;
+	background: red;
+}
+.ruler-element:nth-child(2n+1){
+	display: block;
+	height: 10px;
+	width: 10px;
+	background: green;
+}
+
+/*PC端*/
+@media only screen and (max-width: 640px) {
+	
+}
+
+/*移动端*/

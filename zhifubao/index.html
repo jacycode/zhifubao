@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/cropper.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/cropper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		 
+	</head>
+	<body>
+		
+		<!--编辑、裁剪、复制-->
+		<header>
+			<div class="header-input">
+				<input type="file" id="file-select" value="选择图片" />
+				<input type="button" id="file-edit" value="编辑" />
+				<input type="button" id="file-cut" value="裁切" />
+				<input type="text"  id="text-origin-get" placeholder="起始高度(get)" />
+				<input type="text"  id="text-space-get" placeholder="间隔高度(get)" />
+				<input type="text"  id="text-origin-set" placeholder="起始高度(set)" />
+				<input type="text"  id="text-space-set" placeholder="间隔高度(set)" />
+				<input type="text"  id="text-space" placeholder="间隔高度(count)" />
+				<input type="text"  id="text-dpi" placeholder="dpi倍率" />
+				<input type="button" id="file-copy" value="交叉绘制" />
+			</div>
+			<div class="header-label">
+				x:<span id="coordinate-x">0</span>,y:<span id="coordinate-y">0</span>,widht:<span id="coordinate-width">0</span>,height:<span id="coordinate-height">0</span>.
+			</div>
+		</header>
+		<!--图片元素-->
+		<content>
+			<div class="ruler">
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+				<span class="ruler-element"></span>
+			</div>
+			<div class="container-div">
+				<img class="image-selected"/>
+			</div>
+		</content>
+		
+		<!--引用js文件-->
+		<script src="js/load-image.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/edit-image.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		
+		</script>
+		
+	</body>
+</html>
